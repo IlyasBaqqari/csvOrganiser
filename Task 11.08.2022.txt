@@ -1,0 +1,8 @@
+Write a program that reads the contents of a CSV file, input.csv, and sorts it contents by name and age. The program should be launched using two arguements, 'input.csv' and 'output.csv'. The result of the program should be a file that contains the sorted contents in correct csv formatting.
+
+Try and think about everything we covered yesterday, what features of the language or object orientated programming in general can help you towards this goal?
+Feel free to research things on Google or ask me and Dylan any questions if you get stuck. 
+
+Including comments and well formatted code is a must! So make use of InteliJ's auto formatting feature.
+
+If you feel like you have a working solution, send me a message and I'm sure I'll find a way to break it and if I can't I'll suggest some further features you can add!
