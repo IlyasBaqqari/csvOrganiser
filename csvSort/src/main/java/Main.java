@@ -44,7 +44,7 @@ public class Main {
 
         // If file not fount, show error message and end program
         } catch (IOException e) {
-            JOptionPane.showMessageDialog(null, "Could not find input.csv file at specified file path...\n\nMake sure the file exists where specified and that the\nfile path is correct and try again.", "No file found...", JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(null, "Could not find file at specified file path...\n\nMake sure the file exists where specified and that the\nfile path is correct and try again.", "No file found...", JOptionPane.ERROR_MESSAGE);
             System.exit(0);
         }
 
