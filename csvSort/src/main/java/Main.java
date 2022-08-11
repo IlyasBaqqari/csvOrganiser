@@ -40,7 +40,13 @@ public class Main {
         ArrayList<String> fileData = new ArrayList<String>();
 
         // Get filePath from user
-        String filePath = JOptionPane.showInputDialog(null, "Please enter the file path of your CSV file.\n\nFor example:\n/Users/johnsmith/Desktop/file.csv", "Enter file path", JOptionPane.INFORMATION_MESSAGE);
+        filePath = JOptionPane.showInputDialog(null, "Please enter the file path of your CSV file.\n\nFor example:\n/Users/johnsmith/Desktop/file.csv", "Enter file path", JOptionPane.INFORMATION_MESSAGE);
+
+        // If input is empty, show error message and try again
+        if (filePath.isEmpty() == true) {
+            JOptionPane.showMessageDialog(null, "Please enter the file path of a .csv file and try again.", "Empty input...", JOptionPane.ERROR_MESSAGE);
+            csvSort();
+        }
 
         // If file opened is not .csv, show error message and restart
         if ((filePath.charAt(filePath.length() - 1) != 'v' || filePath.charAt(filePath.length() - 2) != 's') || (filePath.charAt(filePath.length() - 3) != 'c' || filePath.charAt(filePath.length() - 4) != '.')) {
@@ -95,5 +101,4 @@ public class Main {
             csvSort();
         }
     }
-
 }
