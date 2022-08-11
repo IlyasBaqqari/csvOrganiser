@@ -35,7 +35,7 @@ public class Main {
 
         // Attempt to open the file
         try {
-            BufferedReader br = new BufferedReader(new FileReader("kjbdvjhds/input.csv"));
+            BufferedReader br = new BufferedReader(new FileReader(filePath));
 
             // Read file into data ArrayList line by line
             while ((line = br.readLine()) != null) {
